@@ -96,11 +96,6 @@ class ShelfCheck(smach.State):
         rospy.loginfo("Executing state: SHELF_CHECK")
         tts_srv("Check the contents of the shelf.")
         # 頭部を可動（角度の数値は要調整!）
-        '''
-        self.head_pub.publish(25.0)
-        rospy.sleep(2.0)
-        self.shelf_result = self.recog_srv('cup','left')
-        '''
         # 上を動作を頭部(カメラ)の角度を調整しながら繰り返す...
         # ↓最適化したいよね...
 
